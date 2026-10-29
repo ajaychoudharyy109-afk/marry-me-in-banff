@@ -7,7 +7,7 @@
 # (for example  your-username/marry-me-in-banff).  See SETUP-GUIDE.
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/marry-me-in-banff
+  repo: ajaychoudharyy109-afk/marry-me-in-banff
   branch: main
   base_url: https://marrymeinbanff.ca
   auth_endpoint: oauth/auth
