@@ -1,15 +1,11 @@
 {
-  "site_title": "Marry Me, In Banff — Destination Weddings in the Canadian Rockies",
+  "site_title": "Marry Me, In Banff — Destination Weddings in the Canadian Rockies TEST",
   "meta_description": "Destination wedding planning and elopements in Banff, Canmore and the Canadian Rockies. Full planning, day-of coordination and all-inclusive elopement packages.",
-  "logo": "images/logo.png",
-  "logo_alt": "Marry Me, In Banff — Wedding Planner",
-  "nav_cta_label": "Inquire",
-  "nav_cta_link": "#contact",
-  "footer_brand": "Marry Me, In Banff",
-  "footer_text": "Banff, Canmore, Lake Louise, Kananaskis",
   "instagram_url": "https://www.instagram.com/marrymeinbanff",
-  "instagram_handle": "@marrymeinbanff",
-  "email": "info@marrymeinbanff.ca",
+  "footer_brand": "Marry Me, In Banff",
+  "nav_cta_link": "#contact",
+  "nav_cta_label": "Inquire",
+  "logo": "images/logo.png",
   "colors": {
     "cream": "#F8F4EC",
     "cream_deep": "#F1EADC",
@@ -18,5 +14,9 @@
     "accent": "#6A74C0",
     "accent_pale": "#C7CCF2",
     "deep": "#333A66"
-  }
+  },
+  "footer_text": "Banff, Canmore, Lake Louise, Kananaskis",
+  "logo_alt": "Marry Me, In Banff — Wedding Planner",
+  "instagram_handle": "@marrymeinbanff",
+  "email": "info@marrymeinbanff.ca"
 }
