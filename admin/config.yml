@@ -609,6 +609,11 @@ collections:
       name: email
       widget: string
       hint: Shown in the Contact section (“Prefer to reach out directly?”).
+    - label: Google tag ID (Google Ads / Analytics)
+      name: google_tag_id
+      widget: string
+      required: false
+      hint: 'Looks like AW-1234567890. Leave empty for no Google tag. It is added to every page automatically.'
     - label: Colours
       name: colors
       widget: object
