@@ -334,6 +334,26 @@ function cssVars(colors) {
   return out.length ? '\n  :root{\n' + out.join('\n') + '\n  }\n' : '';
 }
 
+/** Google tag (Google Ads / Analytics). Built from the ID only, so nothing else can be injected. */
+function googleTag(id) {
+  const v = String(id == null ? '' : id).trim();
+  if (!v) return '';
+  if (!/^(AW|G|GT|DC|UA)-[A-Za-z0-9-]{4,30}$/.test(v)) {
+    warn('Google tag ID "' + v + '" does not look right (it should look like AW-1234567890) — the tag was left out.');
+    return '';
+  }
+  return `<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=${v}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '${v}');
+</script>
+`;
+}
+
 function buildPage() {
   const site = readJson('content/settings.json');
   const home = readJson('content/home.json');
@@ -382,7 +402,7 @@ function buildPage() {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${esc(site.site_title || BRAND)}</title>
+${googleTag(site.google_tag_id)}<title>${esc(site.site_title || BRAND)}</title>
 <meta name="description" content="${esc(site.meta_description || '')}">
 <style>
 ${css}${cssVars(site.colors)}</style>
