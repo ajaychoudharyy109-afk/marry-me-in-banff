@@ -1,16 +1,16 @@
 {
   "sections": [
     {
-      "type": "hero",
-      "image": "images/hero-background.jpg",
-      "eyebrow": "Destination Weddings · Canadian Rockies",
+      "body": "Whether you're coming from far or near, we welcome you to Marry Me, In Banff. We specialize in turning your vision into reality, crafting destination weddings in the breathtaking Canadian Rockies — unforgettable experiences that reflect your unique love story.",
       "heading": "Your love story, told",
       "heading_em": "amidst the mountains",
-      "body": "Whether you're coming from far or near, we welcome you to Marry Me, In Banff. We specialize in turning your vision into reality, crafting destination weddings in the breathtaking Canadian Rockies — unforgettable experiences that reflect your unique love story.",
-      "primary_label": "Start the Conversation",
-      "primary_link": "#contact",
+      "secondary_link": "#packages",
       "secondary_label": "View Packages",
-      "secondary_link": "#packages"
+      "eyebrow": "Weddings · Canadian Rockies",
+      "primary_link": "#contact",
+      "primary_label": "Start the Conversation",
+      "type": "hero",
+      "image": "images/hero-background.jpg"
     },
     {
       "type": "divider",
@@ -120,52 +120,52 @@
       "menu_note": "Consider this our menu. Choose your course.",
       "items": [
         {
-          "name": "Run Away With Me",
-          "subtitle": "All-Inclusive Elopement · Nothing Left to Arrange",
-          "price": "From $9,000 CAD",
-          "image": "images/package-run-away-with-me.jpg",
+          "cta_label": "Inquire About This Package",
           "image_alt": "Wooden \"just married\" signs on backpacks, ready for the trail",
-          "tagline": "Just you, the mountains, and the best day of your life.",
-          "left_body": "We handle absolutely everything so all you have to do is show up, look incredible, and say I do. No spreadsheets. No stress. Just magic.\n\n#### The Experience\n\nYour elopement is not a smaller wedding — it is a more intentional one. Every detail, every vendor, every moment is chosen specifically for the two of you.\n\nWe scout locations in the Canadian Rockies that match your vision — whether that's a wildflower meadow, a glacial lakeshore, a canyon, or a mountain summit. We handle permits, pack-in and pack-out logistics, and all vendor coordination. Leave No Trace is a value, not just a policy.\n\nOn your day, you simply arrive. We handle everything else.",
           "right_body": "#### What's Included\n\n- 6 hours of personalized photography\n- Bridal bouquet & boutonniere — additional bouquet available at cost\n- Bridal hair & makeup\n- Alberta wedding officiant\n- Wedding licence & certificate\n- Full wedding planning & day-of coordination\n- Day-of assistance — logistics, timing and calm execution throughout\n\n#### Add-Ons Available\n\n- Additional bridal bouquet — priced at cost\n- Elopement picnic setup at ceremony location\n- Post-ceremony dinner reservation & coordination\n- Second ceremony location",
-          "cta_label": "Inquire About This Package",
-          "cta_link": "#contact"
+          "cta_link": "#contact",
+          "price": "From $9,000 CAD",
+          "name": "Run Away With Me",
+          "tagline": "Just you, the mountains, and the best day of your life.",
+          "subtitle": "All-Inclusive Elopement · Nothing Left to Arrange",
+          "left_body": "We handle absolutely everything so all you have to do is show up, look incredible, and say I do. No spreadsheets. No stress. Just magic.\n\n#### The Experience\n\nYour elopement is not a smaller wedding — it is a more intentional one. Every detail, every vendor, every moment is chosen specifically for the two of you.\n\nWe scout locations in the Canadian Rockies that match your vision — whether that's a wildflower meadow, a glacial lakeshore, a canyon, or a mountain summit. We handle permits, pack-in and pack-out logistics, and all vendor coordination. Leave No Trace is a value, not just a policy.\n\nOn your day, you simply arrive. We handle everything else.",
+          "image": "images/package-run-away-with-me.jpg"
         },
         {
-          "name": "The Whole Gorgeous Thing",
-          "subtitle": "Full Planning · Start to Finish",
-          "price": "From $7,000 CAD",
-          "image": "images/package-the-whole-gorgeous-thing.jpg",
+          "cta_label": "Inquire About This Package",
           "image_alt": "A fully styled reception ballroom with tall white floral arrangements",
-          "tagline": "From the champagne when you said yes, to the last song of the night — we are with you for every single chapter. Your only job is to fall more in love.",
-          "left_body": "#### Why Choose Marry Me, In Banff\n\n**Local expertise** — we partner with the region's most respected vendors to deliver authentic, elevated experiences.\n\n**Turnkey service** — from concept to celebration, we provide a single point of contact and full-service execution.\n\n**Attention to detail** — every timeline, contract and design decision is vetted and managed with precision.\n\n**Guest-first approach** — we design logistics and experiences that prioritise comfort and memorable moments.",
           "right_body": "#### What's Included\n\n- Initial consultation and vision development — a bespoke concept built on your style, priorities and budget\n- Full timeline and budget management — customized tracking, payment schedules and vendor contracts\n- Venue sourcing and site visits — curated selection, virtual or on-site visits, and venue negotiations\n- Vendor curation and management — florists, caterers, photographers, videographers, officiants, entertainment, hair and makeup, rentals, transportation\n- Design, styling and décor — full creative direction including colour palette, florals, signage, linens and lighting\n- Guest experience and logistics — travel guidance, welcome events, accommodation blocks and guest communication\n- Ceremony and reception coordination — run-of-show, rehearsal, floor plan and vendor load-in oversight\n- Day-of production team — lead planner, assistant planners and on-site vendor liaisons\n- Legal and cultural guidance — destination marriage requirements, permits and translator coordination if needed\n- 24/7 on-call support and contingency planning in the weeks leading up to your day",
-          "cta_label": "Inquire About This Package",
-          "cta_link": "#contact"
+          "cta_link": "#contact",
+          "price": "From $7,000 CAD",
+          "name": "The Whole Gorgeous Thing",
+          "tagline": "From the champagne when you said yes, to the last song of the night — we are with you for every single chapter. Your only job is to fall more in love.",
+          "subtitle": "Full Planning · Start to Finish",
+          "left_body": "#### Why Choose Marry Me, In Banff\n\n**Local expertise** — we partner with the region's most respected vendors to deliver authentic, elevated experiences.\n\n**Turnkey service** — from concept to celebration, we provide a single point of contact and full-service execution.\n\n**Attention to detail** — every timeline, contract and design decision is vetted and managed with precision.\n\n**Guest-first approach** — we design logistics and experiences that prioritise comfort and memorable moments.",
+          "image": "images/package-the-whole-gorgeous-thing.jpg"
         },
         {
-          "name": "We Got You, Babe",
-          "subtitle": "Final Weeks & Day-Of Coordination",
-          "price": "From $4,000 CAD",
-          "image": "images/package-we-got-you-babe.jpg",
+          "cta_label": "Inquire About This Package",
           "image_alt": "A simple, snowy ceremony walk",
-          "tagline": "You've done the hard work. Now hand us the wand.",
-          "left_body": "We swoop in for the final weeks and run your entire day like the pros we are.\n\n#### Why This Package\n\nYou've planned it beautifully. We make sure it's executed flawlessly — so you can be completely present in every moment of your day.\n\n#### Optional Add-Ons\n\n- Extended day coverage or additional coordinators\n- Vendor contract review and negotiation\n- Detailed floor plan and seating chart creation\n- Additional planning meetings beyond the initial consultation",
           "right_body": "#### What's Included\n\n- Initial consultation and full plan review — one comprehensive meeting within 4–6 weeks of the wedding\n- Preferred vendor list and recommendations for any remaining needs\n- Vendor coordination and communication — confirm all arrivals, setup needs and final payments\n- Detailed hour-by-hour wedding day timeline, distributed to all vendors and the wedding party\n- Rehearsal coordination — attendance and leadership at the wedding rehearsal\n- Full day-of coordination (6 hours) — ceremony cues, music, timing, vendor transitions\n- Ceremony and reception setup and styling oversight\n- Breakdown and vendor load-out oversight\n- Professional emergency kit — safety pins, stain remover, pain relief, bandages and more",
-          "cta_label": "Inquire About This Package",
-          "cta_link": "#contact"
+          "cta_link": "#contact",
+          "price": "From $4,000 CAD",
+          "name": "We Got You, Babe",
+          "tagline": "You've done the hard work. Now hand us the wand.",
+          "subtitle": "Final Weeks & Day-Of Coordination",
+          "left_body": "We swoop in for the final weeks and run your entire day like the pros we are.\n\n#### Why This Package\n\nYou've planned it beautifully. We make sure it's executed flawlessly — so you can be completely present in every moment of your day.\n\n#### Optional Add-Ons\n\n- Extended day coverage or additional coordinators\n- Vendor contract review and negotiation\n- Detailed floor plan and seating chart creation\n- Additional planning meetings beyond the initial consultation",
+          "image": "images/package-we-got-you-babe.jpg"
         },
         {
-          "name": "Just Say Yes",
-          "subtitle": "All the Essentials, No Fuss",
-          "price": "From $3,500 CAD",
-          "image": "images/package-just-say-yes.jpg",
-          "image_alt": "Newlyweds walking out through cheering guests",
-          "tagline": "Show up, say it, celebrate. That's literally it.",
-          "left_body": "We take care of everything you need for the most important 20 minutes of your life. Simple. Beautiful. Completely yours.\n\n#### The Experience\n\nThe Just Say Yes package is exactly what it sounds like — beautifully simple. No months of planning, no overwhelming vendor lists, no decisions to agonise over. We have hand-picked the essential vendors so you don't have to. Everything in this package is fixed, curated and ready to go.\n\nYou don't choose the photographer — we have one. You don't source the officiant — we have one. You don't find the ceremony location — we have that too. This is a straight-up, no-fuss ceremony package with everything you need and nothing you don't.\n\n#### Want to Make It Yours?\n\nAdd what matters to you — a bridal bouquet, hair and makeup, a cake, a photographer upgrade, a venue rental, a celebratory dinner. We'll coordinate any add-ons seamlessly so everything still feels effortless on the day. Think of it as your foundation — everything essential is already in place, and the rest is entirely up to you.",
-          "right_body": "#### What's Included\n\n- Alberta Marriage Commissioner\n- One hour of wedding photography\n- At least one onsite coordinator — two at larger weddings and during busy summer and fall months\n- Ceremony location\n- Unlimited assistance leading up to your wedding\n\n#### Add-Ons Available\n\n- Bridal bouquet & boutonniere — custom florals at cost\n- Additional florals — ceremony arch, centrepieces, petals\n- Bridal hair & makeup\n- Photographer upgrade — extended coverage or premium photographer\n- Venue rental — private ceremony space, indoor or outdoor\n- Celebratory dinner or champagne toast coordination\n- Rentals — chairs, arch, table, linens and styling\n- Extended coordinator time for larger guest counts",
           "cta_label": "Inquire About This Package",
-          "cta_link": "#contact"
+          "image_alt": "Newlyweds walking out through cheering guests",
+          "right_body": "#### What's Included\n\n- Alberta Marriage Commissioner\n- One hour of wedding photography\n- At least one onsite coordinator — two at larger weddings and during busy summer and fall months\n- Ceremony location\n- Unlimited assistance leading up to your wedding\n\n#### Add-Ons Available\n\n- Bridal bouquet & boutonniere — custom florals at cost\n- Additional florals — ceremony arch, centrepieces, petals\n- Bridal hair & makeup\n- Photographer upgrade — extended coverage or premium photographer\n- Venue rental — private ceremony space, indoor or outdoor\n- Celebratory dinner or champagne toast coordination\n- Rentals — chairs, arch, table, linens and styling\n- Extended coordinator time for larger guest counts",
+          "cta_link": "#contact",
+          "price": "From $3,500 CAD",
+          "name": "Just Say Yes",
+          "tagline": "Show up, say it, celebrate. That's literally it.",
+          "subtitle": "All the Essentials, No Fuss",
+          "left_body": "We take care of everything you need for the most important 20 minutes of your life. Simple. Beautiful. Completely yours.\n\n#### The Experience\n\nThe Just Say Yes package is exactly what it sounds like — beautifully simple. No months of planning, no overwhelming vendor lists, no decisions to agonise over. We have hand-picked the essential vendors so you don't have to. Everything in this package is fixed, curated and ready to go.\n\nYou don't choose the photographer — we have one. You don't source the officiant — we have one. You don't find the ceremony location — we have that too. This is a straight-up, no-fuss ceremony package with everything you need and nothing you don't.\n\n#### Want to Make It Yours?\n\nAdd what matters to you — a bridal bouquet, hair and makeup, a cake, a photographer upgrade, a venue rental, a celebratory dinner. We'll coordinate any add-ons seamlessly so everything still feels effortless on the day. Think of it as your foundation — everything essential is already in place, and the rest is entirely up to you.",
+          "image": "images/package-just-say-yes.jpg"
         }
       ]
     },
@@ -313,14 +313,10 @@
       ]
     },
     {
-      "type": "about",
-      "nav_label": "About",
-      "portrait": "",
-      "portrait_alt": "",
-      "eyebrow": "Meet Your Planner",
+      "body": "With over 17 years of experience in the wedding and event industry, Lorelle is a true local expert in Banff and Canmore. Specializing in designing and curating personalized events, she brings a unique touch to every occasion.\n\nHaving owned and operated a floral and décor business in Banff, Lorelle combines her design background with her extensive experience as a wedding coordinator for various companies. Her passion for creating unforgettable experiences shines through in every event she touches.",
       "heading": "A true local expert,",
       "heading_em": "in your corner",
-      "body": "With over 17 years of experience in the wedding and event industry, Lorelle is a true local expert in Banff and Canmore. Specializing in designing and curating personalized events, she brings a unique touch to every occasion.\n\nHaving owned and operated a floral and décor business in Banff, Lorelle combines her design background with her extensive experience as a wedding coordinator for various companies. Her passion for creating unforgettable experiences shines through in every event she touches.",
+      "portrait_alt": "",
       "facts": [
         {
           "value": "17+",
@@ -334,7 +330,11 @@
           "value": "❖",
           "label": "Florals In-House"
         }
-      ]
+      ],
+      "eyebrow": "Meet Your Planner",
+      "nav_label": "About",
+      "type": "about",
+      "portrait": ""
     },
     {
       "type": "photo_break",
