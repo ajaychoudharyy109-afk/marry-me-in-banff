@@ -1,0 +1,661 @@
+# Decap CMS configuration for Marry Me, In Banff.
+#
+# This file controls what Lorelle sees in /admin. Field names must match the ones
+# build.js reads and content/*.json stores — rename one, rename all three.
+#
+# BEFORE GOING LIVE: change `repo` below to the real GitHub repository
+# (for example  your-username/marry-me-in-banff).  See SETUP-GUIDE.
+backend:
+  name: github
+  repo: ajaychoudharyy109-afk/marry-me-in-banff
+  branch: main
+  base_url: https://marrymeinbanff.ca
+  auth_endpoint: oauth/auth
+local_backend: true
+publish_mode: simple
+media_folder: images
+public_folder: /images
+site_url: https://marrymeinbanff.ca
+display_url: https://marrymeinbanff.ca
+logo:
+  src: https://marrymeinbanff.ca/images/logo.png
+locale: en
+collections:
+- name: pages
+  label: Website
+  editor:
+    preview: false
+  files:
+  - name: home
+    label: Home page — sections, photos & wording
+    file: content/home.json
+    fields:
+    - label: Sections
+      name: sections
+      widget: list
+      label_singular: Section
+      hint: The page is built from these blocks, top to bottom. Drag a block to move it, open it to edit it, or
+        use + to add a new one. Click Publish when you are done.
+      types:
+      - label: Top banner (hero)
+        name: hero
+        widget: object
+        summary: '{{fields.heading}} {{fields.heading_em}}'
+        fields:
+        - label: Background photo
+          name: image
+          widget: image
+          hint: JPG or PNG. Large photos are resized automatically when the site updates.
+          choose_url: false
+          media_library:
+            config:
+              max_file_size: 15728640
+        - label: Small heading above the title
+          name: eyebrow
+          widget: string
+          hint: The small spaced-out line, e.g. “How We Work Together”.
+          required: false
+        - label: Title
+          name: heading
+          widget: string
+          hint: The main title. Put the words you want in plain text here…
+          required: false
+        - label: Title (coloured italic ending)
+          name: heading_em
+          widget: string
+          hint: …and the words you want in coloured italics here (optional).
+          required: false
+        - label: Paragraph
+          name: body
+          widget: text
+          hint: Typing “Marry Me, In Banff” anywhere is automatically styled in the brand italics.
+        - label: Main button text
+          name: primary_label
+          widget: string
+        - label: Main button link
+          name: primary_link
+          widget: string
+          hint: 'Use #contact to jump to the Inquire section, or a full web address.'
+        - label: Second button text
+          name: secondary_label
+          widget: string
+          required: false
+        - label: Second button link
+          name: secondary_link
+          widget: string
+          required: false
+      - label: Divider (❖ ❖ ❖)
+        name: divider
+        widget: object
+        summary: Divider — {{fields.size}}
+        fields:
+        - label: Size
+          name: size
+          widget: select
+          options:
+          - label: Large (extra space)
+            value: large
+          - label: Normal
+            value: normal
+          default: normal
+      - label: Wide photo (with optional quote)
+        name: photo_break
+        widget: object
+        summary: Photo — {{fields.alt}}
+        fields:
+        - label: Photo
+          name: image
+          widget: image
+          hint: JPG or PNG. Large photos are resized automatically when the site updates.
+          choose_url: false
+          media_library:
+            config:
+              max_file_size: 15728640
+        - label: Photo description
+          name: alt
+          widget: string
+          hint: A short description of what is in the photo (read aloud for people who cannot see it, and used by
+            Google).
+        - label: Quote card
+          name: quote_side
+          widget: select
+          hint: Show a quote card floating over the bottom of the photo? Pick “No quote” to show just the photo.
+          options:
+          - label: No quote
+            value: none
+          - label: Quote on the left
+            value: left
+          - label: Quote on the right
+            value: right
+          default: none
+        - label: Quote
+          name: quote_text
+          widget: text
+          required: false
+        - label: Who said it
+          name: quote_author
+          widget: string
+          required: false
+      - label: Floating photo gallery
+        name: gallery
+        widget: object
+        summary: Gallery — {{fields.heading}} {{fields.heading_em}}
+        fields:
+        - label: Menu label
+          name: nav_label
+          widget: string
+          hint: The word shown in the menu at the top of the page. Leave empty to keep this section out of the menu.
+          required: false
+        - label: Small heading above the title
+          name: eyebrow
+          widget: string
+          hint: The small spaced-out line, e.g. “How We Work Together”.
+          required: false
+        - label: Title
+          name: heading
+          widget: string
+          hint: The main title. Put the words you want in plain text here…
+          required: false
+        - label: Title (coloured italic ending)
+          name: heading_em
+          widget: string
+          hint: …and the words you want in coloured italics here (optional).
+          required: false
+        - label: Short line under the title
+          name: subtext
+          widget: text
+          required: false
+        - label: Photos
+          name: photos
+          widget: list
+          hint: Add, remove or drag to re-order. The gallery drifts in this order, then loops.
+          label_singular: Photo
+          summary: '{{fields.alt}}'
+          fields:
+          - label: Photo
+            name: image
+            widget: image
+            hint: JPG or PNG. Large photos are resized automatically when the site updates.
+            choose_url: false
+            media_library:
+              config:
+                max_file_size: 15728640
+          - label: Photo description
+            name: alt
+            widget: string
+            hint: A short description of what is in the photo (read aloud for people who cannot see it, and used
+              by Google).
+      - label: Packages
+        name: packages
+        widget: object
+        summary: Packages — {{fields.heading}} {{fields.heading_em}}
+        fields:
+        - label: Menu label
+          name: nav_label
+          widget: string
+          hint: The word shown in the menu at the top of the page. Leave empty to keep this section out of the menu.
+          required: false
+        - label: Small heading above the title
+          name: eyebrow
+          widget: string
+          hint: The small spaced-out line, e.g. “How We Work Together”.
+          required: false
+        - label: Title
+          name: heading
+          widget: string
+          hint: The main title. Put the words you want in plain text here…
+          required: false
+        - label: Title (coloured italic ending)
+          name: heading_em
+          widget: string
+          hint: …and the words you want in coloured italics here (optional).
+          required: false
+        - label: Short line under the title
+          name: subtext
+          widget: text
+          required: false
+        - label: Small note above the packages
+          name: menu_note
+          widget: string
+          required: false
+        - label: Packages
+          name: items
+          widget: list
+          hint: Each package opens like an accordion on the website. Drag to re-order.
+          label_singular: Package
+          summary: '{{fields.name}} — {{fields.price}}'
+          fields:
+          - label: Package name
+            name: name
+            widget: string
+          - label: Line under the name
+            name: subtitle
+            widget: string
+            required: false
+          - label: Price
+            name: price
+            widget: string
+            hint: Typed exactly as it should appear, e.g. “From $4,000 CAD”.
+          - label: Photo
+            name: image
+            widget: image
+            hint: JPG or PNG. Large photos are resized automatically when the site updates.
+            required: false
+            choose_url: false
+            media_library:
+              config:
+                max_file_size: 15728640
+          - label: Photo description
+            name: image_alt
+            widget: string
+            hint: A short description of what is in the photo (read aloud for people who cannot see it, and used
+              by Google).
+            required: false
+          - label: Tagline
+            name: tagline
+            widget: text
+            hint: The first line under the photo.
+            required: false
+          - label: Left column text
+            name: left_body
+            widget: markdown
+            hint: Normal paragraphs. For a small coloured sub-heading use the “H4” button; for a list use the bullet
+              button.
+            required: false
+            buttons:
+            - bold
+            - italic
+            - link
+            - heading-four
+            - bulleted-list
+            editor_components: []
+            modes:
+            - rich_text
+          - label: Right column text (“What’s included”)
+            name: right_body
+            widget: markdown
+            hint: Usually a sub-heading followed by a bullet list.
+            required: false
+            buttons:
+            - bold
+            - italic
+            - link
+            - heading-four
+            - bulleted-list
+            editor_components: []
+            modes:
+            - rich_text
+          - label: Button text
+            name: cta_label
+            widget: string
+            hint: Leave empty for no button.
+            required: false
+          - label: Button link
+            name: cta_link
+            widget: string
+            hint: 'Use #contact to jump to the Inquire section.'
+            required: false
+      - label: Questions & answers (FAQ)
+        name: faq
+        widget: object
+        summary: FAQ — {{fields.heading}} {{fields.heading_em}}
+        fields:
+        - label: Menu label
+          name: nav_label
+          widget: string
+          hint: The word shown in the menu at the top of the page. Leave empty to keep this section out of the menu.
+          required: false
+        - label: Small heading above the title
+          name: eyebrow
+          widget: string
+          hint: The small spaced-out line, e.g. “How We Work Together”.
+          required: false
+        - label: Title
+          name: heading
+          widget: string
+          hint: The main title. Put the words you want in plain text here…
+          required: false
+        - label: Title (coloured italic ending)
+          name: heading_em
+          widget: string
+          hint: …and the words you want in coloured italics here (optional).
+          required: false
+        - label: Question groups
+          name: categories
+          widget: list
+          label_singular: Group
+          summary: '{{fields.title}}'
+          fields:
+          - label: Group name
+            name: title
+            widget: string
+          - label: Questions
+            name: items
+            widget: list
+            label_singular: Question
+            summary: '{{fields.question}}'
+            fields:
+            - label: Question
+              name: question
+              widget: string
+            - label: Answer
+              name: answer
+              widget: markdown
+              hint: Press Enter twice for a new paragraph.
+              buttons:
+              - bold
+              - italic
+              - link
+              editor_components: []
+              modes:
+              - rich_text
+      - label: About you
+        name: about
+        widget: object
+        summary: About — {{fields.heading}} {{fields.heading_em}}
+        fields:
+        - label: Menu label
+          name: nav_label
+          widget: string
+          hint: The word shown in the menu at the top of the page. Leave empty to keep this section out of the menu.
+          required: false
+        - label: Portrait photo
+          name: portrait
+          widget: image
+          hint: Leave empty to show the “photo to come” placeholder. Portrait (tall) photos look best.
+          required: false
+          choose_url: false
+          media_library:
+            config:
+              max_file_size: 15728640
+        - label: Portrait description
+          name: portrait_alt
+          widget: string
+          hint: A short description of what is in the photo (read aloud for people who cannot see it, and used by
+            Google).
+          required: false
+        - label: Small heading above the title
+          name: eyebrow
+          widget: string
+          hint: The small spaced-out line, e.g. “How We Work Together”.
+          required: false
+        - label: Title
+          name: heading
+          widget: string
+          hint: The main title. Put the words you want in plain text here…
+          required: false
+        - label: Title (coloured italic ending)
+          name: heading_em
+          widget: string
+          hint: …and the words you want in coloured italics here (optional).
+          required: false
+        - label: Your story
+          name: body
+          widget: markdown
+          hint: Press Enter twice for a new paragraph.
+          buttons:
+          - bold
+          - italic
+          - link
+          editor_components: []
+          modes:
+          - rich_text
+        - label: Highlights (the three little numbers)
+          name: facts
+          widget: list
+          label_singular: Highlight
+          summary: '{{fields.value}} {{fields.label}}'
+          fields:
+          - label: Big number or symbol
+            name: value
+            widget: string
+            hint: e.g. 17+ or ❖
+          - label: Words underneath
+            name: label
+            widget: string
+      - label: Kind words (testimonials)
+        name: testimonials
+        widget: object
+        summary: Kind words — {{fields.heading}} {{fields.heading_em}}
+        fields:
+        - label: Menu label
+          name: nav_label
+          widget: string
+          hint: The word shown in the menu at the top of the page. Leave empty to keep this section out of the menu.
+          required: false
+        - label: Small heading above the title
+          name: eyebrow
+          widget: string
+          hint: The small spaced-out line, e.g. “How We Work Together”.
+          required: false
+        - label: Title
+          name: heading
+          widget: string
+          hint: The main title. Put the words you want in plain text here…
+          required: false
+        - label: Title (coloured italic ending)
+          name: heading_em
+          widget: string
+          hint: …and the words you want in coloured italics here (optional).
+          required: false
+        - label: Quotes
+          name: quotes
+          widget: list
+          label_singular: Quote
+          summary: '{{fields.author}}'
+          fields:
+          - label: What they said
+            name: text
+            widget: text
+          - label: Who said it
+            name: author
+            widget: string
+            hint: A name, or “Anonymous”.
+      - label: Wide photo banner
+        name: banner
+        widget: object
+        summary: Banner — {{fields.alt}}
+        fields:
+        - label: Photo
+          name: image
+          widget: image
+          hint: JPG or PNG. Large photos are resized automatically when the site updates.
+          choose_url: false
+          media_library:
+            config:
+              max_file_size: 15728640
+        - label: Photo description
+          name: alt
+          widget: string
+          hint: A short description of what is in the photo (read aloud for people who cannot see it, and used by
+            Google).
+      - label: Contact / Inquire
+        name: contact
+        widget: object
+        summary: Contact — {{fields.heading}} {{fields.heading_em}}
+        fields:
+        - label: Small heading above the title
+          name: eyebrow
+          widget: string
+          hint: The small spaced-out line, e.g. “How We Work Together”.
+          required: false
+        - label: Title
+          name: heading
+          widget: string
+          hint: The main title. Put the words you want in plain text here…
+          required: false
+        - label: Title (coloured italic ending)
+          name: heading_em
+          widget: string
+          hint: …and the words you want in coloured italics here (optional).
+          required: false
+        - label: Short line under the title
+          name: subtext
+          widget: text
+          required: false
+        - label: Button text
+          name: button_label
+          widget: string
+        - label: Button link
+          name: button_link
+          widget: string
+          hint: Your Dubsado inquiry form address.
+        - label: Words before your email address
+          name: alt_prefix
+          widget: string
+          hint: e.g. “Prefer to reach out directly?” (your email address comes from Site settings).
+          required: false
+      - label: Text section (new)
+        name: text_section
+        widget: object
+        summary: Text — {{fields.heading}} {{fields.heading_em}}
+        fields:
+        - label: Menu label
+          name: nav_label
+          widget: string
+          hint: The word shown in the menu at the top of the page. Leave empty to keep this section out of the menu.
+          required: false
+        - label: Small heading above the title
+          name: eyebrow
+          widget: string
+          hint: The small spaced-out line, e.g. “How We Work Together”.
+          required: false
+        - label: Title
+          name: heading
+          widget: string
+          hint: The main title. Put the words you want in plain text here…
+          required: false
+        - label: Title (coloured italic ending)
+          name: heading_em
+          widget: string
+          hint: …and the words you want in coloured italics here (optional).
+          required: false
+        - label: Link name
+          name: anchor
+          widget: string
+          hint: 'Optional. Lets you link to this section, e.g. type “our-story” and link to #our-story. Leave empty
+            and one is made for you.'
+          required: false
+        - label: Background
+          name: background
+          widget: select
+          options:
+          - label: Plain
+            value: plain
+          - label: Soft tint
+            value: tinted
+          default: plain
+        - label: Text
+          name: body
+          widget: markdown
+          hint: Headings, bullet lists and links are supported.
+          buttons:
+          - bold
+          - italic
+          - link
+          - heading-three
+          - bulleted-list
+          editor_components: []
+          modes:
+          - rich_text
+  - name: settings
+    label: Site settings — logo, menu button, footer, colours
+    file: content/settings.json
+    fields:
+    - label: Browser tab & Google title
+      name: site_title
+      widget: string
+      hint: Shown in the browser tab and as the headline in Google results.
+    - label: Google description
+      name: meta_description
+      widget: text
+      hint: The one or two sentences Google shows under the title. About 150 characters is ideal.
+    - label: Logo (top-left)
+      name: logo
+      widget: image
+      hint: Best as a PNG with a transparent background.
+      choose_url: false
+      media_library:
+        config:
+          max_file_size: 15728640
+    - label: Logo description
+      name: logo_alt
+      widget: string
+    - label: Top-right button text
+      name: nav_cta_label
+      widget: string
+      hint: The dark “Inquire” button in the menu.
+    - label: Top-right button link
+      name: nav_cta_link
+      widget: string
+      hint: 'Use #contact to jump to the Inquire section.'
+    - label: Footer name
+      name: footer_brand
+      widget: string
+    - label: Footer places line
+      name: footer_text
+      widget: string
+    - label: Instagram link
+      name: instagram_url
+      widget: string
+      hint: Leave empty to hide the Instagram icon.
+      required: false
+    - label: Instagram name shown
+      name: instagram_handle
+      widget: string
+      hint: e.g. @marrymeinbanff
+      required: false
+    - label: Email address
+      name: email
+      widget: string
+      hint: Shown in the Contact section (“Prefer to reach out directly?”).
+    - label: Google tag ID (Google Ads / Analytics)
+      name: google_tag_id
+      widget: string
+      required: false
+      hint: 'Looks like AW-1234567890. Leave empty for no Google tag. It is added to every page automatically.'
+    - label: Google Analytics ID (visitor statistics)
+      name: google_analytics_id
+      widget: string
+      required: false
+      hint: 'Looks like G-ABC123XYZ. Leave empty for no analytics. It is added to every page automatically.'
+    - label: Colours
+      name: colors
+      widget: object
+      hint: Careful — these change the whole site. If something looks wrong, ask AJ to restore the originals.
+      fields:
+      - label: Page background
+        name: cream
+        widget: color
+        allowInput: true
+        enableAlpha: false
+      - label: Soft tint background (FAQ & About)
+        name: cream_deep
+        widget: color
+        allowInput: true
+        enableAlpha: false
+      - label: Main text
+        name: ink
+        widget: color
+        allowInput: true
+        enableAlpha: false
+      - label: Softer text
+        name: ink_soft
+        widget: color
+        allowInput: true
+        enableAlpha: false
+      - label: Accent colour (the periwinkle)
+        name: accent
+        widget: color
+        allowInput: true
+        enableAlpha: false
+      - label: Light accent
+        name: accent_pale
+        widget: color
+        allowInput: true
+        enableAlpha: false
+      - label: Dark colour (buttons & Contact section)
+        name: deep
+        widget: color
+        allowInput: true
+        enableAlpha: false
